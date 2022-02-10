@@ -1,5 +1,6 @@
 /// Una Cabecera de SOAP para contener un token SAML firmado
-Class IBSP.CXN.SAML20.SOAPHeader Extends (%SOAP.Header, %XML.Adaptor)
+/// 20220110: Changed %SOAP.Header to %SOAP.Security.Header
+Class IBSP.CXN.SAML20.SOAPHeader Extends (%SOAP.Security.Header, %XML.Adaptor)
 {
 
 Parameter XMLNAME = "Security";
